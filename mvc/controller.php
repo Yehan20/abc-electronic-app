@@ -16,8 +16,8 @@
             }
        }
 
-       public function productView($category){
-           $result=$this->viewProduct($category);
+       public function productView($category,$hide){
+           $result=$this->viewProduct($category,$hide);
            
               return $result;
            
