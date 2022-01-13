@@ -184,7 +184,7 @@
     <!-- testamonials -->
     <section class="testamonials bg-light py-3">
        <div class="container">
-           <h1 class="text-center">Testemonials</h1>
+           <h1 class="text-center">Testimonials</h1>
            <div class="owl-carousel owl-theme bg-light mb-3" id="two">
                <div class="item">
                    <img src="people/people.jpeg" class="mb-3" alt="">
