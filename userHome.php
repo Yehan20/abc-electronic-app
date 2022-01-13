@@ -57,7 +57,7 @@
                   <div class="collapse navbar-collapse" id="togglenav">
                   <ul style="gap:10px;" class="navbar-nav justify-content-start w-100 align-items-center">
                         <li class="nav-item my-3 ">
-                          <a class="nav-link px-3 btn nav-btn bg-primary  text-light "  aria-current="page" href="userOrder">Order Items</a>
+                          <a class="nav-link px-3 btn nav-btn bg-primary  text-light "  aria-current="page" href="userOrder.php">Order Items</a>
                         </li>
                         <li class="nav-item position-relative ">
                           <a class="nav-link px-3 btn nav-btn  bg-primary  text-light " aria-current="page" href="userPay.php">Manage Orders</a>
