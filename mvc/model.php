@@ -15,8 +15,14 @@
 
     }
 
-    public function viewProduct($category){
-        $sql="SELECT * FROM products WHERE type = '$category' AND stock>0";
+    public function viewProduct($category,$hide){
+        if($hide){
+            $sql="SELECT * FROM products WHERE type = '$category' AND stock>0";
+        }
+        else{
+            $sql="SELECT * FROM products WHERE type = '$category'";
+        }
+    
         $result=$this->connect()->query($sql);
         return $result;
     }

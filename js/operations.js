@@ -66,7 +66,7 @@ addCart.forEach(cart=>{
       let hide = document.querySelector('#hideTypes').value;
       console.log(temp);
       let stk =(temp[4].textContent).split('$');
-      amt=temp[4].innerText.split('-')[1]
+      amt=temp[3].innerText.split('-')[1]
       console.log(Number(amt));
 
       // need to assingn the values of the card to the wolf

@@ -136,28 +136,28 @@
                       <?php 
                      
                          $admin = new adminView();
-                         $res=$admin->productView('laptops');
+                         $res=$admin->productView('laptops',false);
                          if(isset($_GET['computers'])){
                             
-                          $res=$admin->productView('laptops');
+                          $res=$admin->productView('laptops',false);
                          }
                          if(isset($_GET['mobiles'])){
                             
-                          $res=$admin->productView('mobiles');
+                          $res=$admin->productView('mobiles',false);
                          }
                          if(isset($_GET['keyboards'])){
                             
-                          $res=$admin->productView('keyboards');
+                          $res=$admin->productView('keyboards',false);
                          }
 
                          if(isset($_GET['mouse'])){
                             
-                          $res=$admin->productView('mouse');
+                          $res=$admin->productView('mouse',false);
                          }
 
                          if(isset($_GET['others'])){
                             
-                          $res=$admin->productView('others');
+                          $res=$admin->productView('others',false);
                          }
                          
 

@@ -32,10 +32,26 @@
               <div class="collapse navbar-collapse" id="togglenav">
                   <ul class="navbar-nav w-100 align-items-start">
                       <li class="nav-item my-3 my-lg-0 ms-lg-auto">
-                        <a class="nav-link px-3 btn nav-btn text-white"  aria-current="page" target="_blank" href="login.php">Start Buying</a>
+                        <a class="nav-link px-3 btn nav-btn text-white"  aria-current="page" target="_blank" href="login.php">Login</a>
                       </li>
-                      <li class="nav-item ms-lg-2 ">
+                      <li class="my-3 my-lg-0 ms-lg-2">
                         <a class="nav-link px-3 btn nav-btn text-white" aria-current="page" target="_blank" href="signup.php">Create an Account</a>
+                      </li>
+
+                      
+                      <li class="nav-item ms-lg-2 ">
+                            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+                            <input type="hidden" name="demoName" value="demo">
+                            <button type="submit" class="btn nav-link nav-btn px-3 bg-success text-white" name="demo">Demo</button>
+                        </form>
+                        
+                        <?php 
+                            if(isset($_POST['demo'])){
+                            $demo=$_POST['demoName'];
+                            $_SESSION['userName']=$demo;
+                            header('location:userHome.php');
+                            }
+                        ?>
                       </li>
                   </ul>
               </div>
@@ -108,29 +124,29 @@
                   <?php 
                      
                      $admin = new adminView();
-                     $res=$admin->productView('laptops');
+                     $res=$admin->productView('laptops',true);
                      
                      if(isset($_GET['laptops'])){
-                        $res=$admin->productView('laptops');
+                        $res=$admin->productView('laptops',true);
                      }
                      
                      if(isset($_GET['mobiles'])){
                         
-                      $res=$admin->productView('mobiles');
+                      $res=$admin->productView('mobiles',true);
                      }
                      if(isset($_GET['keyboards'])){
                         
-                      $res=$admin->productView('keyboards');
+                      $res=$admin->productView('keyboards',true);
                      }
 
                      if(isset($_GET['mouse'])){
                         
-                      $res=$admin->productView('mouse');
+                      $res=$admin->productView('mouse',true);
                      }
 
                      if(isset($_GET['others'])){
                         
-                      $res=$admin->productView('others');
+                      $res=$admin->productView('others',true);
                      }
                      
 
