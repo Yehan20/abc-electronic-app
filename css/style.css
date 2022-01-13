@@ -1,0 +1,291 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@media (max-width: 500px) {
+  table {
+    width: 100%;
+  }
+  table thead {
+    display: none !important;
+  }
+  table tbody, table tr, table td {
+    display: block;
+    width: 100%;
+  }
+  table tr {
+    margin-bottom: 15px;
+  }
+  table td {
+    text-align: left;
+    position: relative;
+  }
+}
+
+.header {
+  background-color: #f4f4f4;
+}
+.header .nav-btn {
+  background: #3656f5;
+}
+.header .logo {
+  width: 50px;
+  height: 50px;
+  background: #111;
+}
+
+.main {
+  background: #f5f5f5;
+}
+.main .row {
+  gap: 1em;
+}
+.main .column {
+  border-radius: 1em;
+}
+.main .card {
+  max-width: 16rem;
+  align-items: center;
+  margin-bottom: 1em;
+  transition: box-shadow 250ms ease-in;
+}
+.main .card:hover {
+  box-shadow: 0 0 3px 5px rgba(0, 17, 255, 0.1);
+  cursor: pointer;
+}
+.main .card .card-body {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-evenly;
+}
+.main .card img {
+  display: block;
+  width: 250px;
+  height: 150px;
+}
+.main ul {
+  background: transparent;
+  outline: none;
+}
+.main li {
+  margin-bottom: 1em;
+  border: 0;
+  outline: 0;
+}
+.main li:first-child {
+  margin-top: 1em;
+}
+.main a {
+  text-decoration: none;
+  transition: color 250ms ease-in;
+}
+.main a:hover {
+  color: green;
+}
+
+.testamonials .item {
+  max-width: 300px;
+  margin: 1em auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testamonials img {
+  border-radius: 60%;
+  height: 200px;
+  width: 200px !important;
+}
+
+.showcase {
+  background: #f5f5f5;
+}
+.showcase .grid {
+  margin-top: 1.5em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1em;
+}
+.showcase .items {
+  background: #fff;
+  padding: 1em;
+  border-radius: 0.4em;
+  color: #222;
+  box-shadow: 0 0 2px 2px #fff;
+  transition: transform 350ms ease-in, box-shadow 350ms ease-in;
+}
+.showcase .items:hover {
+  box-shadow: 0 0 3px 5px rgba(0, 17, 255, 0.1);
+  transform: translateY(10px);
+  cursor: pointer;
+}
+.showcase h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.showcase .social-media, .showcase .quicklinks {
+  background: #fff;
+  border-radius: 1em;
+  color: #222;
+  box-shadow: 0 0 2px 2px #fff;
+  transition: transform 350ms ease-in, box-shadow 350ms ease-in;
+}
+.showcase .social-media:hover, .showcase .quicklinks:hover {
+  box-shadow: 0 0 3px 5px rgba(0, 17, 255, 0.1);
+  transform: translateX(10px);
+  cursor: pointer;
+}
+.showcase .quicklinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.showcase .quicklinks h3 {
+  flex-basis: 100%;
+}
+.showcase .quicklinks a {
+  color: #222;
+  text-decoration: none;
+}
+.showcase li {
+  border: 0;
+  background-color: #fff;
+}
+.showcase i {
+  font-size: clamp(2rem,5vw,4rem);
+  color: #222 !important;
+}
+
+.full {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  z-index: 50;
+}
+.full .loader {
+  border: 16px solid #f3f3f3;
+  /* Light grey */
+  border-top: 16px solid green;
+  /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+  position: fixed;
+}
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.full::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  padding: 1em;
+  background-color: #ccc;
+  filter: blur(10px);
+}
+.full h3 {
+  z-index: 50;
+  transform: translate(10px, 90px);
+}
+
+.login .form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.login .btn {
+  width: 100%;
+}
+
+.signup .form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.signup .d-flex {
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.signup .d-flex div {
+  flex-grow: 1;
+}
+.signup select {
+  width: 100%;
+}
+
+.dashboard img {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+}
+.dashboard li {
+  border: 0;
+  background: transparent;
+}
+.dashboard a {
+  text-decoration: none;
+  color: #fff;
+  text-decoration: none;
+}
+.dashboard .card {
+  max-width: 16rem;
+  align-items: center;
+  margin-bottom: 1em;
+  transition: box-shadow 250ms ease-in;
+}
+.dashboard .card:hover {
+  box-shadow: 0 0 3px 5px rgba(0, 17, 255, 0.1);
+  cursor: pointer;
+}
+.dashboard .card .card-body {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-evenly;
+}
+.dashboard .card img {
+  display: block;
+  width: 250px;
+  height: 150px;
+}
+.dashboard .column {
+  border-radius: 1em;
+}
+
+.main-showcase {
+  overflow: hidden;
+}
+.main-showcase .swipe-left {
+  position: relative;
+  transform: translateX(-140%);
+  transition: transform 550ms ease-in;
+}
+.main-showcase .swipe-right {
+  position: relative;
+  transform: translateX(170%);
+  transition: transform 550ms ease-in;
+}
+.main-showcase .move {
+  transform: translateX(0);
+}/*# sourceMappingURL=style.css.map */

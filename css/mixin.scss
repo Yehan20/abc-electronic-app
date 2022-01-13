@@ -1,0 +1,49 @@
+@mixin  card {
+       max-width:16rem;
+       align-items:center;
+       margin-bottom:1em;
+       transition:box-shadow 250ms ease-in;
+       
+       &:hover{
+           box-shadow: 0 0 3px 5px rgba($color: #01f, $alpha: 0.1);
+           cursor: pointer;
+       }
+    
+    .card-body{
+        display:flex !important;
+        flex-direction:column !important;
+        justify-content:space-evenly;
+       
+
+
+      
+    }
+    img{
+        display:block;
+        width:250px;
+        height:150px;
+    }
+}
+
+@mixin search {
+
+        max-width:600px;
+        width:100%;
+        .searchBtnClr{
+            background:$searchBtnClr;
+        }
+        .search__title{
+            color:$searchBtnClr;
+        }
+        img{
+            background:#000;
+        }
+}
+
+@mixin mq($val){
+    @media(max-width:$val){
+        @content;
+        
+
+    }
+}
