@@ -93,7 +93,7 @@
                 </form>
               
                 <p class=" mt-3 text-center lead fw-bold text-danger" id="result"></p>
-                <p class=" mt-3 text-center text-secondary">Already a User Click  <a href="#">here</a> to Login for free</p>
+                <p class=" mt-3 text-center text-secondary">Already a User Click  <a href="signup.php">here</a> to Login for free</p>
                 <?php 
                    if(isset($_POST['send'])){
                         $userName=$_POST['userName'];

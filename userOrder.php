@@ -115,7 +115,7 @@
             <div style="border-radius:0.3em;" class="search__aside bg-light pt-3 mt-1 align-self-md-end flex-grow-1 ">
              
               
-                  <ul style="gap:10px;" class="d-flex mb-0 flex-wrap flex-grow-1 justify-content-center  align-items-end">
+                  <ul style="gap:10px;" class="ps-0  d-flex mb-0 flex-wrap flex-grow-1 justify-content-center  align-items-end">
                       <li class="list-group item mt-0">
                       <form  action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>' method="GET">
                         <button type="submit" id="type" name="laptops" class=" btn  btn-lg btn-primary w-100 ">Computers</button>
