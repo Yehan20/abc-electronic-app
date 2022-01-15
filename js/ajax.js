@@ -95,6 +95,7 @@ function HomePage(){
                 let length=(resArray.length/5)-1
                 for(let i =0; i<length; i++){
                  newArray=resArray.splice(0,6);
+                 console.log(newArray);
     
                 if(!moveButtons.includes(typeBtn.name)){
                     document.querySelector('#one').innerHTML='';
