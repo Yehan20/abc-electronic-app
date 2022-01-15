@@ -149,6 +149,40 @@
         <div class="container">
            <div class="row pt-0 mb-3">
 
+           <h3 class="ms-4 text-center text-md-start category__text mb-1">Type : <?php 
+                     
+                     $arrays=array('Laptops','Mobiles','Keyboards','Mouse','Others');
+                     
+                      
+
+                      $isset=isset($_GET['laptops']);
+                      $checkMobile=isset($_GET['mobiles']);
+                      $checkKeyboard=isset($_GET['keyboards']);
+                      $checkMouse=isset($_GET['mouse']);
+                      $other=isset($_GET['others']);
+
+                      if($isset){
+                        echo $arrays[0];
+                      }
+                      
+                      if($checkMobile){
+                       echo $arrays[1];
+                     }
+                     
+                     if($checkKeyboard){
+                       echo $arrays[2];
+                     }
+                     
+                     if($checkMouse){
+                       echo $arrays[3];
+                     }
+                     
+                     if($other){
+                       echo $arrays[4];
+                     }
+                     
+                ?></h3>
+
                <div class="column flex-grow-1 d-flex flex-wrap m-0  justify-content-evenly gx-5 col-md-9 py-3 bg-light">
 
                   <?php 
