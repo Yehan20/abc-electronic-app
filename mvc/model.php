@@ -14,8 +14,36 @@
 
 
     }
+     
+    public function viewProduct(){
+        if(isset($_POST['done'])){
+            $category=$_POST['type'];
+       
+  
+    
+            
+             $sql="SELECT * FROM products WHERE type = '$category' AND stock>0  ";
+            
+       
+            $res=$this->connect()->query($sql);
+            while($result=$res->fetch_assoc()){
+                echo $result['path'].'*';
+                echo $result['type'].'*';
+                echo $result['name'].'*';
+                echo $result['description'].'*';
+                echo $result['stock'].'*';
+                echo $result['price'].'*';
+                
+                
 
-    public function viewProduct($category,$hide){
+               
+            } 
+          
+          }
+
+    }
+
+    public function viewProduct2($category,$hide){
         if($hide){
             $sql="SELECT * FROM products WHERE type = '$category' AND stock>0";
         }

@@ -19,6 +19,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="icon" href="icons/icon.png" type="image/x-icon">
 
+
+
 </head>
 <body>
     <header class="header pt-3 " id="header">
@@ -32,26 +34,25 @@
               <div class="collapse navbar-collapse" id="togglenav">
                   <ul class="navbar-nav w-100 align-items-start">
                       <li class="nav-item my-3 my-lg-0 ms-lg-auto">
-                        <a class="nav-link px-3 btn nav-btn text-white"  aria-current="page" target="_blank" href="login.php">Login</a>
+                        <a class="nav-link px-3 btn nav-btn text-white"  aria-current="page" target="_blank" href="login.php">Start Buying</a>
                       </li>
-                      <li class="my-3 my-lg-0 ms-lg-2">
+                      <li class="nav-item my-3 my-lg-0 ms-lg-2 ">
                         <a class="nav-link px-3 btn nav-btn text-white" aria-current="page" target="_blank" href="signup.php">Create an Account</a>
                       </li>
 
-                      
                       <li class="nav-item ms-lg-2 ">
-                            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
-                            <input type="hidden" name="demoName" value="demo">
-                            <button type="submit" class="btn nav-link nav-btn px-3 bg-success text-white" name="demo">Demo</button>
-                        </form>
-                        
-                        <?php 
-                            if(isset($_POST['demo'])){
-                            $demo=$_POST['demoName'];
-                            $_SESSION['userName']=$demo;
-                            header('location:userHome.php');
-                            }
-                        ?>
+                      <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
+                      <input type="hidden" name="demoName" value="demo">
+                    <button type="submit" class="btn nav-link nav-btn px-3 bg-success text-white" name="demo">Demo</button>
+                  </form>
+                  
+                  <?php 
+                     if(isset($_POST['demo'])){
+                       $demo=$_POST['demoName'];
+                       $_SESSION['userName']=$demo;
+                       header('location:userHome.php');
+                     }
+                  ?>
                       </li>
                   </ul>
               </div>
@@ -65,7 +66,6 @@
     <div class="loader"></div>
     <h3 class="text-center">Loading...</h3>
     </div>
-
     <!-- main section -->
     <section class="heading mt-0 p-3">
       <div class="container">
@@ -88,7 +88,7 @@
                   <ul style="gap:10px;" class="d-flex ps-0 pb-0 m-0 flex-wrap flex-grow-1 justify-content-center  align-items-end">
                       <li class="list-group item mb-0">
                       <form  action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>' method="GET">
-                        <button type="submit" id="type" name="laptops" class=" btn btn-primary btn-lg w-100 ">Computers</button>
+                        <button type="submit" id="type" name="laptops" class="btn btn-primary btn-lg w-100">Computers</button>
                       </form>
                       </li>
                       <li class="list-group item mb-0">
@@ -117,63 +117,11 @@
           </div>
 
         <div class="container">
-           <div class="row mb-3">
+           <div class="row mb-3 p-2">
+                  <h3 class="ms-4 text-center text-md-start category__text mb-1">Type:</h3>
+               <div id="one" class=" column flex-grow-1 d-flex flex-wrap m-0  justify-content-evenly gx-5 col-md-9 pb-3 bg-light">
 
-               <div id="one" class="owl-carousel bg-light column align-items-stretch flex-grow-1 d-flex m-0  justify-content-evenly bg-danger gx-5 col-md-9 pb-3 bg-light">
-
-                  <?php 
-                     
-                     $admin = new adminView();
-                     $res=$admin->productView('laptops',true);
-                     
-                     if(isset($_GET['laptops'])){
-                        $res=$admin->productView('laptops',true);
-                     }
-                     
-                     if(isset($_GET['mobiles'])){
-                        
-                      $res=$admin->productView('mobiles',true);
-                     }
-                     if(isset($_GET['keyboards'])){
-                        
-                      $res=$admin->productView('keyboards',true);
-                     }
-
-                     if(isset($_GET['mouse'])){
-                        
-                      $res=$admin->productView('mouse',true);
-                     }
-
-                     if(isset($_GET['others'])){
-                        
-                      $res=$admin->productView('others',true);
-                     }
-                     
-
-               
-                     while($result=$res->fetch_assoc()){?>
-                     
-                     <div  class="items d-flex flex-column flex-grow-1 card ms-lg-2 mx-auto  py-3 px-2" style="min-height:450px;" id="usersCard">
-                     <img src="<?php echo $result['path']; ?>" class="card-img-top img-fluid" alt="">
-                     <div class="card-body text-center">
-                     <input type="hidden" name="types" id="hideTypes" value="<?php echo $result['type']; ?>">
-                    <h5 class="card-title mb-auto fw-bold "><?php echo $result['name']; ?></h5>
-                    <p class="card-text mt-auto "><?php echo $result['description']; ?></p>
-                    <p class="card-details text-secondary mt-auto">
-                       Avialble in Stock - <?php echo $result['stock'];  ?>
-                    </p>
-                   
-                    <h3 ><span>Price:</span>$<?php echo $result['price']; ?></h3>
-                    <a href="login.php" style="min-width:200px"  class="btn btn-primary mt-auto  text-light d-block w-100  mt-3">Buy Now</a>
-                 
-                </div>
-              </div>
-                    
-                    
-                 <?php }
-                 
-                   
-               ?>
+       
                </div>
            </div>
         </div>
@@ -195,12 +143,12 @@
          </div>  
          
          </div>
-</div>
+       </div>
     </section>
     <!-- testamonials -->
     <section class="testamonials bg-light py-3">
        <div class="container">
-           <h1 class="text-center">Testimonials</h1>
+           <h1 class="text-center">Testemonials</h1>
            <div class="owl-carousel owl-theme bg-light mb-3" id="two">
                <div class="item">
                    <img src="people/people.jpeg" class="mb-3" alt="">
@@ -331,6 +279,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+
+ 
     <script>
         
         $(document).ready(function(){
@@ -360,27 +310,7 @@
 
         var one=$('#one');
         var two=$('#two');
-        one.owlCarousel({
-           
-            loop: false,
-            rewind: true,
-            autoplay:true,
-            dots:true,
-            autoplayTimeout:5000,
-            nav:false,
-            margin:30,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:1
-                },
-                1000:{
-                    items:4
-                }
-            }
-        })
+   
 
        two.owlCarousel({
            
@@ -407,7 +337,7 @@
        //typing effect
        if ($("#slider__text").length == 1) {
               
-              var typed_strings =" , Hello User, Weclome to ABC Electronics  App"
+              var typed_strings =" , Hello User, Weclome to ABC electornics App,"
     
               var typed = new Typed("#slider__text", {
                   strings: typed_strings.split(", "),
@@ -424,7 +354,10 @@
 
 
     </script>
+
     <script src="js/animate.js"></script>
+    <script src="js/ajax.js"></script>
+
     
 </body>
 </html>
