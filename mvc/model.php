@@ -223,6 +223,7 @@
           }
    }
 
-
+   $admin = new Admin();
+   $res=$admin->viewProduct();
 
 ?>
