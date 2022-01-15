@@ -7,7 +7,7 @@ if(window.scrollY>762){
 }
 
 window.addEventListener('scroll',(e)=>{
-    console.log(scrollY);
+
     if(scrollY>614){
         left.classList.add('move');
         right.classList.add('move')

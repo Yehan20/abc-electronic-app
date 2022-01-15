@@ -25,11 +25,13 @@ function HomePage(){
             let length=(resArray.length/5)-1
             for(let i =0; i<length; i++){
              newArray=resArray.splice(0,6);
+             console.log(newArray);
+             console.log(newArray[1]);
      
     
             if(!(document.querySelector('#one').classList.contains('done'))){
     
-                  console.log('this works ');
+                  console.log('when loading this works ');
                 
              document.querySelector('#one').innerHTML+=
              `
