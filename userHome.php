@@ -27,7 +27,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark" id='navbar'>
           <div class="container">
      
-              <a href="#" class="navbar-brand lead text-light"><img src="icons/logo.gif" class="img-fluid logo" alt="Logo Img"></a>
+              <a href="#" class="navbar-brand lead text-light"><img src="icons/logo.png" class="img-fluid logo" alt="Logo Img"></a>
               <ul class="navbar-nav flex-row px-3">
                 <li class="nav-item me-3">
                     <a class="btn bg-primary text-white" href="userHome.php">Home</a>
@@ -57,7 +57,7 @@
                   <div class="collapse navbar-collapse" id="togglenav">
                   <ul style="gap:10px;" class="navbar-nav justify-content-start w-100 align-items-center">
                         <li class="nav-item my-3 ">
-                          <a class="nav-link px-3 btn nav-btn bg-primary  text-light "  aria-current="page" href="userOrder.php">Order Items</a>
+                          <a class="nav-link px-3 btn nav-btn bg-primary  text-light "  aria-current="page" href="userOrder.php?laptops=">Order Items</a>
                         </li>
                         <li class="nav-item position-relative ">
                           <a class="nav-link px-3 btn nav-btn  bg-primary  text-light " aria-current="page" href="userPay.php">Manage Orders</a>

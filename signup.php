@@ -22,7 +22,7 @@
     <header class="header mb-3 pt-3" id="header">
         <nav class="navbar navbar-expand-lg  navbar-light" id='navbar'>
           <div class="container">
-              <a href="index.php" class="navbar-brand lead text-light"><img src="icons/logo.gif" class="img-fluid logo" alt="Logo Img"></a>
+              <a href="index.php" class="navbar-brand lead text-light"><img src="icons/logo.png" class="img-fluid logo" alt="Logo Img"></a>
          
           </div>
         </nav>

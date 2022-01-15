@@ -24,7 +24,7 @@
     <header class="header pt-3 " id="header">
         <nav class="navbar navbar-expand-lg navbar-light" id='navbar'>
           <div class="container">
-            <a href="#" class="navbar-brand lead text-dark"><img src="icons/logo.gif" class="img-fluid logo d-inline-block me-3" alt="Logo Img"><span style="font-size:clamp(.8rem,1.5vw,1.5rem);" class="text-center fw-bold " id="slider__text"> 
+            <a href="#" class="navbar-brand lead text-dark"><img src="icons/logo.png" class="img-fluid logo d-inline-block me-3" alt="Logo Img"><span style="font-size:clamp(.8rem,1.5vw,1.5rem);" class="text-center fw-bold " id="slider__text"> 
              </span></a>
               <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#togglenav"  aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>

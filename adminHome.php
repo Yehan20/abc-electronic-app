@@ -27,7 +27,7 @@
       <header class="header pt-3" id="header">
         <nav class="navbar navbar-expand-lg navbar-light" id='navbar'>
           <div class="container">
-              <a href="#" class="navbar-brand lead text-light"><img src="icons/logo.gif" class="img-fluid logo" alt="Logo Img"></a>
+              <a href="#" class="navbar-brand lead text-light"><img src="icons/logo.png" class="img-fluid logo" alt="Logo Img"></a>
               <ul class="navbar-nav flex-row px-3">
                 <li class="nav-item me-3">
                     <a class="btn bg-primary text-white" href="#">Home</a>
