@@ -29,7 +29,7 @@ function HomePage(){
     
             if(!(document.querySelector('#one').classList.contains('done'))){
     
-                  
+                  console.log('this works ');
                 
              document.querySelector('#one').innerHTML+=
              `
@@ -64,8 +64,6 @@ function HomePage(){
     })
     const typeBtns = document.querySelectorAll('#type');
     let moveButtons=[];
-    let clicked;
-    let clickedButton;
     
     typeBtns.forEach((typeBtn,index)=>{
          
@@ -90,6 +88,8 @@ function HomePage(){
                 body:url
             }).then(result=>result.text()).then(res=>{
                 resArray=res.split('*');
+                //
+                console.log('fetch done');
                 
                 //creatiting array of data to pass
                 let length=(resArray.length/5)-1
@@ -106,7 +106,10 @@ function HomePage(){
     
                 if(!(document.querySelector('#one').classList.contains('done'))){
                  moveButtons.push(typeBtn.name)
-            
+                 
+
+                 //
+                 console.log('this works');
                     
                  document.querySelector('#one').innerHTML+=
                  `

@@ -1,6 +1,6 @@
 const left= document.querySelector('.swipe-left');
 const right= document.querySelector('.swipe-right');
-console.log(window.scrollY);
+
 if(window.scrollY>762){
     left.classList.add('move');
     right.classList.add('move')
