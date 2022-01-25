@@ -34,7 +34,7 @@
               <div class="collapse navbar-collapse" id="togglenav">
                   <ul class="navbar-nav w-100 align-items-start">
                       <li class="nav-item my-3 my-lg-0 ms-lg-auto">
-                        <a class="nav-link px-3 btn nav-btn text-white"  aria-current="page" target="_blank" href="login.php">Start Buying</a>
+                        <a class="nav-link px-3 btn nav-btn text-white"  aria-current="page" target="_blank" href="login.php">Login</a>
                       </li>
                       <li class="nav-item my-3 my-lg-0 ms-lg-2 ">
                         <a class="nav-link px-3 btn nav-btn text-white" aria-current="page" target="_blank" href="signup.php">Create an Account</a>

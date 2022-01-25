@@ -1,6 +1,16 @@
-#ABC ecommerce App
+ABC ecommerce App
 
 this is a small ecommerce app, where customers can buy electronic products ( computers, mouse, keyboard, mobiles, etc.),no payment gateway is used which means there is no real money transaction, just a database record being updated , 
+
+Concepts Used
+
+<ul>
+  <li>PHP OOP</li>
+  <li>Mysqli OOP Queries</li>
+  <li>Crud Operations</li>
+  <li>Ajax With Js </li>
+  <li>Event Listeners</li>
+</ul>
 
 <a href="https://abc-ecommerce-app.herokuapp.com/">Live Site</a>
 
@@ -17,33 +27,33 @@ Admin - Manage products, Process the order(Assign a driver)
 ---
 
 ---
-  <img src="https://raw.githubusercontent.com/Yehan20/abc-electronic-app/main/UI/UI-2.PNG" alt="drawing" width="90%"/>
+  <img src="https://raw.githubusercontent.com/Yehan20/abc-electronic-app/main/UI/UI-2.PNG" alt="drawing" width="50%"/>
 
   Once you click the demo, you will go to the user Home then you can click the order items button to start buying
 ---
 
 ---
-  <img src="https://raw.githubusercontent.com/Yehan20/abc-electronic-app/main/UI/UI-3.PNG" alt="drawing" width="90%">
+  <img src="https://raw.githubusercontent.com/Yehan20/abc-electronic-app/main/UI/UI-3.PNG" alt="drawing" width="50%">
   
   Then you can choose an item and click add to cart button after that, a modal will pop out then you can fill the details and click order
 ---
 
 ---
-<img src="https://raw.githubusercontent.com/Yehan20/abc-electronic-app/main/UI/UI-4.PNG" alt="drawing" width="90%"/>
+<img src="https://raw.githubusercontent.com/Yehan20/abc-electronic-app/main/UI/UI-4.PNG" alt="drawing" width="50%"/>
 
    After that you can pay for the order after clicking using manage order,
 ---
 
 
 ---
-<img src="https://raw.githubusercontent.com/Yehan20/abc-electronic-app/main/UI/UI-5.PNG" alt="drawing" width="90%"/>
+<img src="https://raw.githubusercontent.com/Yehan20/abc-electronic-app/main/UI/UI-5.PNG" alt="drawing" width="50%"/>
    
    Once you clicked pay now, you will have to fill this model, just enter some fake info since it’s not a real transaction
 ---
 
 
 ---
-<img src="https://raw.githubusercontent.com/Yehan20/abc-electronic-app/main/UI/UI-1.PNG" alt="drawing" width="90%">
+<img src="https://raw.githubusercontent.com/Yehan20/abc-electronic-app/main/UI/UI-1.PNG" alt="drawing" width="50%">
 
    Now you can view your orders in the history, and it will become completed when the admin assigns a driver
 --- 
