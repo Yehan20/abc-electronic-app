@@ -337,7 +337,7 @@
        //typing effect
        if ($("#slider__text").length == 1) {
               
-              var typed_strings =" , Hello User, Weclome to ABC electornics App,"
+              var typed_strings =" , Hello User, Weclome to ABC electronics App,"
     
               var typed = new Typed("#slider__text", {
                   strings: typed_strings.split(", "),
